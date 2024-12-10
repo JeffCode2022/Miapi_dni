@@ -1,34 +1,37 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulario de Consulta de DNI</title>
     <link rel="stylesheet" href="/style/style.css">
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script> <!-- Iconos FontAwesome -->
+    <script src="/js/aplication.js" defer></script>
+    <title>Consulta de Datos</title>
 </head>
-
 <body>
     <div class="content">
-        <h1><i class="fas fa-id-card-alt"></i> Formulario de Consulta de DNI</h1>
-
-        <form id="formularioConsulta" action="" method="POST">
+        <h1>Consulta de Datos</h1>
+        <form id="formularioConsulta">
             <div class="form-group">
-                <label for="dni" class="form-label">Ingrese el DNI:</label>
-                <input type="text" id="dni" name="dni" class="form-input" required pattern="\d{8}" title="El DNI debe tener 8 dígitos.">
-                <small class="form-help">El DNI debe contener 8 dígitos.</small>
+                <label for="tipoConsulta">Seleccione el tipo de consulta:</label>
+                <select id="tipoConsulta" class="form-input">
+                    <option value="dni">DNI</option>
+                    <option value="ruc">RUC</option>
+                </select>
             </div>
 
             <div class="form-group">
-                <button type="submit" id="btnConsultar" class="form-button"><i class="fas fa-search"></i> Consultar</button>
+                <label for="dni" class="form-label">Ingrese DNI o RUC:</label>
+                <input type="text" id="dni" name="dni" class="form-input" required>
             </div>
+            
+            <button type="submit" class="form-button">Consultar</button>
         </form>
 
-        <div class="resultado" id="resultado"></div>
+        <!-- Sección donde se muestran los resultados -->
+        <div id="resultado" class="resultado">
+            <h3>Resultados de la consulta:</h3>
+            <ul id="datosConsulta"></ul>
+        </div>
     </div>
-
-    <script src="/js/aplication.js"></script>
 </body>
-
 </html>
