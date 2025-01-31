@@ -18,7 +18,7 @@ document.getElementById("formularioConsulta").onsubmit = async (e) => {
     const datosConsulta = document.getElementById("datosConsulta");
 
     spinner.style.display = 'block'; // Mostrar el spinner
-    resultadoDiv.style.display = 'none'; // Ocultar resultados anteriores
+    resultadoDiv.style.display = 'none'; // Ocultar resultados anterioresS
     datosConsulta.innerHTML = ''; // Limpiar resultados anteriores
 
     try {
