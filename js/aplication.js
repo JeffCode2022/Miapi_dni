@@ -10,7 +10,7 @@ document.getElementById("formularioConsulta").onsubmit = async (e) => {
         return;
     }
 
-    const token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxMiwiZXhwIjoxNzMzODU0NDkzfQ.wWWb4IjuEaBldr05xtGrvGI3o6USr-R3jvAwa6vfwc8";
+    const token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxMTgsImV4cCI6MTc0MDY4MTE0OX0.e5T6leQ6u5s_sp41nHNN_WFT_ymvCztJ0OH0Znw46wk";
 
     // Mostramos el spinner
     const spinner = document.getElementById("spinner");
